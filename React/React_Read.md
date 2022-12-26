@@ -5,6 +5,7 @@ Today I studied React
 - props: Give attributes to components
 - event: a tag in component is not same with a tag in html. react convert code to html. onclick in html and onClick(function) is different
 - state: props(outside) is used to pass data between components and state(inside) is the local state of the component 
+  <img src="https://user-images.githubusercontent.com/108441067/209495684-98eb11df-1401-4a20-b2df-573a80229c61.JPG" width=20% height=20%>
 
 
 ```jsx
