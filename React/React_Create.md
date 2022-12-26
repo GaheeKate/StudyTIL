@@ -1,10 +1,17 @@
-# React : Read
+# React : Create
 
 Today I studied React
-- Component: User defined tag, Can reduce repeated codes
-- props: Give attributes to components
-- event: a tag in component is not same with a tag in html. react convert code to html. onclick in html and onClick(function) is different
-- state: props(outside) is used to pass data between components and state(inside) is the local state of the component 
+- const[value,setValue] = useState(PRIMITIVE); 
+   - string,number,boolean,bigint,undefined,symbol,null
+- const[value,setValue] = useState(Object); 
+   - object, array</br></br>
+  
+   > newValue = {...value} //copied value</br>
+     change newValue</br>
+     setValue(newValue)
+
+   > newValue = [...value] //Array
+
 
 
 ```jsx
@@ -12,8 +19,6 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
-//cant update every variable hence use useState to update variables to be updated
-//react is about creating user defined tag(component)
 function Header(props) {
   return <header>
     <h1><a href="/" onClick={function (event) {
@@ -28,12 +33,12 @@ function Nav(props) {
   for (let i = 0; i < props.topics.length; i++) {
     let t = props.topics[i];
     lis.push(<li key={t.id}>
-      <a id={t.id} /*id was number but changed to string*/
+      <a id={t.id}
         href={'/read/' + t.id} onClick={(event) => {
           event.preventDefault();
-          props.onChangeMode(Number(event.target.id))/*convert to number*/;
+          props.onChangeMode(Number(event.target.id));
         }}> {t.title}</a >
-    </li >)//unique key in for loop
+    </li >) 
   }
 
   return <nav>
@@ -48,21 +53,36 @@ function Article(props) {
     <h2>{props.title}</h2>{props.body}  </article>
 }
 
+
+function Create(props) {
+  return <article>
+    <h2>Create</h2>
+    <form onSubmit={event => {
+      event.preventDefault();
+      const title = event.target.title.value;// target is form tag
+      const body = event.target.body.value;
+      props.onCreate(title, body);
+    }}>
+      <p><input type="text" name="title" placeholder='title' /></p>
+      <p><textarea name="body" placeholder='body'></textarea></p>
+      <p><input type="submit" value="create"></input></p>
+    </form>
+  </article>
+}
+
+
+
 function App() {
-  /*const _mode = useState('welcome');// default value
-  const mode = _mode[0] // read state
-  const setMode = _mode[1] //set state*/
 
   const [mode, setMode] = useState('welcome');
   const [id, setId] = useState(null);
-
-
-  const topics = [
+  const [nextId, setNextId] = useState(4);
+  const [topics, setTopics] = useState([
     { id: 1, title: "html", body: "Hi, html" },
     { id: 2, title: "css", body: "Hi, css" },
     { id: 3, title: "js", body: "Hi, js" }
 
-  ]
+  ]);
 
   let content = null;
   if (mode === 'welcome') {
@@ -78,6 +98,18 @@ function App() {
     }
     content = <Article title={title} body={body}></Article>
   }
+  else if (mode === 'create') {
+    content = <Create onCreate={(_title, _body) => {
+      const newTopic = { id: nextId, title: _title, body: _body }
+      const newTopics = [...topics]
+      newTopics.push(newTopic);
+      setTopics(newTopics);
+      setMode('read');
+      setId(nextId);
+      setNextId(nextId + 1);
+
+    }}></Create>
+  }
 
   return (
     <div>
@@ -90,6 +122,10 @@ function App() {
       }}></Nav>
       {content}
 
+      <a href="/create" onClick={(event) => {
+        event.preventDefault();//prevent default function of tag
+        setMode('create');
+      }}>Create</a>
     </div>
 
 
@@ -97,5 +133,6 @@ function App() {
 }
 
 export default App;
+
 
 ```
