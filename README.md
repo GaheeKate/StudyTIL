@@ -15,6 +15,9 @@
 ## Python
 [1. Python_101](Python/Python_101.md)</br>
 [2. Python_simpleApps](Python/Python_simpleApps.md)</br>
+[3. Python_echo_socket](Python/echo_socket.md)</br>
+[4. Python_echo_socketserver](Python/echo_socketserver.md)</br>
+[5. Python_file_chat_server](Python/file_chat_server.md)</br>
 
 ## RubyonRails
 [1. RoR_lotto](RoR/RoR_lotto.md)</br>
