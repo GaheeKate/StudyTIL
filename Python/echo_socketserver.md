@@ -165,7 +165,7 @@ def getFileFromServer(filename):
             except Exception as e:
                 print(e)
 
-    print('file [%s] sending completed, received [%d]' %
+    print('file [%s] download completed, received [%d]' %
           (filename, data_transferred))
 
 
