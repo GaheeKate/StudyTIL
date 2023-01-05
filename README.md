@@ -2,6 +2,8 @@
 
 ## General
 [1. UnderstandLanguages](General/UnderstandLanguages.md)</br>
+[2. Dotnet](General/.net.md)</br>
+
 
 ## Git
 [1. Git_101](Git/Git_101.md)</br>
