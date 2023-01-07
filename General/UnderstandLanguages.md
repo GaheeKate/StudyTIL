@@ -7,6 +7,7 @@ they are trying to solve.
 - libraries and frameworks developed to manage DOM, minimize state change management, and help developers focus more on function development and user interface.
 - understand why they are there, and how to use them effectively.
 - The DOM (Document Object Model) represents the web page as a tree structure
+- NPX: The npx stands for Node Package Execute and it comes with the npm, when you installed npm above 5.2.0 version then automatically npx will installed. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package.
 
 #### Frontend
 - HTML
