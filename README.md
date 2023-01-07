@@ -28,7 +28,7 @@
 [1. RoR_lotto](RoR/RoR_lotto.md)</br>
 
 ## ASP.NET
-[1. ASP.NET Core Web Api](ASP.NET/ASP.NET Core Web Api)</br>
+[1. ASP.NET_Core_Web_Api](ASP.NET/ASP.NET_Core_Web_Api)</br>
 
 ## PHP
 [1. PHP_101](PHP/PHP_101.md)</br>
