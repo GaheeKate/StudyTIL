@@ -33,6 +33,10 @@ because variables doesn't update html automatically. however state render html a
 
 - Shallow copy[...name] : ... means strip array/object and [] means make it array/object
 
+- When should I use Component: 1. to reduce repeated html, 2. large page, 3. frequently changing html ui
+- a function cant bring variables in other function. will have problem when a component brings state
+
+
 ```jsx
 /*eslint-disable */
 
@@ -60,15 +64,31 @@ function App() {
           Copydata[0] = "Pulgogi"
           setData(Copydata)
         }}>ChangeName</button>
-        <p>Published in 2023-01-07</p>      </div>
+        <p>Published in 2023-01-07</p>
+      </div>
       <div className='list'>
         <h4 style={{ color: 'red', fontSize: '20px' }} id={data[1]}>{data[1]} </h4>
-        <p>Published in 2023-01-07</p>      </div>
+        <p>Published in 2023-01-07</p>
+      </div>
       <div className='list'>
         <h4 style={{ color: 'red', fontSize: '20px' }} id={data[2]}>{data[2]} </h4>
-        <p>Published in 2023-01-07</p>      </div>
+        <p>Published in 2023-01-07</p>
+      </div>
+      <Modal></Modal>
+
     </div >
   );
+}
+
+
+function Modal() {
+  return (
+    <div className='modal'>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <p>Contents</p>
+    </div>
+  )
 }
 
 export default App;
