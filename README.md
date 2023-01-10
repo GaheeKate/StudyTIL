@@ -21,6 +21,7 @@
 ## Node.js
 [1. Nodejs_101](NodeJS/Nodejs_101.md)</br>
 [2. Nodejs_review + MongoDB](NodeJS/Nodejs_review.md)</br>
+[2. Nodejs_module](NodeJS/Nodejs_module.md)</br>
 
 ## Python
 [1. Python_101](Python/Python_101.md)</br>
