@@ -9,7 +9,7 @@
 [1. Git_101](Git/Git_101.md)</br>
 
 ## JavaScript
-[1. JavaScript](JavaScript/JavaScript_1.md)</br>
+[1. JavaScript](JavaScript/Javascript_1.md)</br>
 
 
 ## TypeScript
