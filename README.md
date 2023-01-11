@@ -8,6 +8,10 @@
 ## Git
 [1. Git_101](Git/Git_101.md)</br>
 
+## JavaScript
+[1. JavaScript](JavaScript/JavaScript_1.md)</br>
+
+
 ## TypeScript
 [1. TypeScript](TypeScript/TypeScript_101.md)</br>
 
