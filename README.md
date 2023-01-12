@@ -10,7 +10,7 @@
 
 ## JavaScript
 [1. JavaScript_1](JavaScript/Javascript_1.md)</br>
-[1. JavaScript_2](JavaScript/Javascript_2.md)</br>
+[2. JavaScript_2](JavaScript/Javascript_2.md)</br>
 
 
 ## TypeScript
