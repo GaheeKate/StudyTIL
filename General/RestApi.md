@@ -2,7 +2,7 @@
 
 Today I studied Rest API
 
-- REST:REST is a Resource Oriented Architecture (ROA) design structure implemented on top of this HTTP protocol. 
+- REST: REST is a Resource Oriented Architecture (ROA) design structure implemented on top of this HTTP protocol. 
   - Uniform Interface, Client-Server, Stateless, Cacheable, A layered system, Code-on-demand
 - RESTful: A REST API (also known as RESTful API) is an application programming interface (API or web API) that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services. REST stands for representational state transfer 
   - If API meets all 6 rules, the API is restful
@@ -14,5 +14,7 @@ Today I studied Rest API
 - stateful: A "stateful structure" sends a response to the client based on the "state" of the session between the server and the client. To do this, session information including the "state" is stored on the server.
 - The TCP 3-way handshake: example of stateful protocol
   - The TCP 3-way handshake is a process used in a TCP/IP network to establish a reliable connection before data is exchanged between applications. Therefore, TCP can be considered stateful as it maintains session information on the server and the server's response can vary based on the session state. 
+
+  <img src="https://user-images.githubusercontent.com/108441067/212522236-791cf76d-479b-4fc5-8816-72e966a65bc8.jpg" width="500" height="500">
 
 - cacheable: A cacheable response is an HTTP response that can be cached, that is stored to be retrieved and used later, saving a new request to the server. Cacheable refers to something that can be stored in a cache. In computing, a cache is a temporary storage area where frequently accessed data can be quickly retrieved. When data is cacheable, it can be stored in a cache so that it can be quickly accessed the next time it is needed, rather than having to be retrieved from the original location. This can improve the performance of a system by reducing the amount of time it takes to access frequently used data.
