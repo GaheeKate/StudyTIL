@@ -4,7 +4,7 @@
 [1. UnderstandLanguages](General/UnderstandLanguages.md)</br>
 [2. Dotnet](General/.NET.md)</br>
 [3. REST API](General/RestApi.md)</br>
-
+[4. CodingStandards](General/BEM_Lint.md)</br>
 
 ## Git
 [1. Git_101](Git/Git_101.md)</br>
@@ -42,7 +42,7 @@
 [1. RoR_lotto](RoR/RoR_lotto.md)</br>
 
 ## ASP.NET
-[1. ASP.NET_Core_Web_Api](ASP.NET/ASP.NET_Core_Web_Api)</br>
+[1. ASP.NET_Core_Web_Api](ASP.NET/ASP.NET_Core_Web_Api.md)</br>
 
 ## PHP
 [1. PHP_101](PHP/PHP_101.md)</br>
