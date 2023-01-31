@@ -11,4 +11,7 @@ security:
 ```
 - service->mongodbserver restart
 
-
+- add a specific user for the database
+    - mongosh --port 27017 -u "admin" authenticationDatabase "admin" -p
+    - use testdb
+    - db.creatUser({user: "testdbuser" , pwd: "test", roles:[{role: dbOwner, db:"testdb"}]})
