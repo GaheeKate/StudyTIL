@@ -32,6 +32,9 @@
 [3. Nodejs_module](NodeJS/Nodejs_module.md)</br>
 [4. Nodejs_pug](NodeJS/Nodejs_pug.md)</br>
 [5. Nodejs_MongoDb](NodeJS/Nodejs_MongoDb.md)</br>
+[5. Nodejs_MongoDb](NodeJS/Nodejs_MongoDbAtlas.md)</br>
+
+
 
 ## Python
 [1. Python_101](Python/Python_101.md)</br>
@@ -45,6 +48,7 @@
 
 ## ASP.NET
 [1. ASP.NET_Core_Web_Api](ASP.NET/ASP.NET_Core_Web_Api.md)</br>
+[2. ASP.NET_ HTTP Client & Views](ASP.NET/ASP.NET_ HTTP Client & Views.md)</br>
 
 ## PHP
 [1. PHP_101](PHP/PHP_101.md)</br>
