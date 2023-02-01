@@ -18,13 +18,15 @@ Today I studied ASP.NET - HTTP Client & Views
     return View(varname)-> Add view with MVC5 view
     ``` 
     - by id: add +id to url</br> </br>    
-    ```c#
-    [HttpPost] create
+  - create
+  ```c#
+    [HttpPost] 
     string url = "addname";
     JavaScriptSerializer jss = new JavaScriptSerializer();
     string Jsonpayload = jss.Serialize(animal); // js object create
     
     HttpContent = StringContent(Jsonpayload);
+    content.Headers.ContentType.MediaType = "application/json"
     client.PostAsync(url,Jsonpayload);
     ```
 
