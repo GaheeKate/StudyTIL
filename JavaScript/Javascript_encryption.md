@@ -24,10 +24,17 @@ function helloWorld(){
 ```
 - spec.js
 ``` js
-function helloWorld(){
-  "use strict";
-  return "Hello World.";
-} 
+describe("Example suite", function(){
+ it("should add 2 plus 2",function(){
+     expect(2 + 2).toEqual(4);
+ })
+});
+ 
+describe("Example suite", function(){
+ it("should add 2 plus 2",function(){
+     expect(helloWorld()).toEqual("Hello World."); //not.toEqual
+ })
+});
 ```
 
 - specRunner.html
