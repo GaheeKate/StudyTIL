@@ -32,8 +32,8 @@
 [3. Nodejs_module](NodeJS/Nodejs_module.md)</br>
 [4. Nodejs_pug](NodeJS/Nodejs_pug.md)</br>
 [5. Nodejs_MongoDb](NodeJS/Nodejs_MongoDb.md)</br>
-[5. Nodejs_MongoDb](NodeJS/Nodejs_MongoDbAtlas.md)</br>
-
+[6. Nodejs_MongoDb](NodeJS/Nodejs_MongoDbAtlas.md)</br>
+[7. Nodejs_MongoDb](NodeJS/NodeandAPIs.md)</br>
 
 
 ## Python
