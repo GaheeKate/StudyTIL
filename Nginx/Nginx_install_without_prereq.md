@@ -7,6 +7,7 @@ curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor | sudo tee /usr/sh
 
 sudo apt-key list /usr/share/keyrings/nginx-archive-keyring.gpg | grep -q 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 || sudo rm /usr/share/keyrings/nginx-archive-keyring.gpg
 //use apt-key to verify the downloaded key and remove
+//if you dont want to verify the key at all, just delete this second line.
 
 echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] http://nginx.org/packages/ubuntu $(lsb_release -cs) nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
 
