@@ -2,7 +2,7 @@
 ## Installing without prerequisites
 Based on https://nginx.org/en/linux_packages.html
 
-
+```
 curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null
 
 sudo apt-key list /usr/share/keyrings/nginx-archive-keyring.gpg | grep -q 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 || sudo rm /usr/share/keyrings/nginx-archive-keyring.gpg
@@ -15,13 +15,14 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 
 sudo apt update
 sudo apt install nginx
-
+```
 ---
 or this:
 
 e.g. Ubuntu 20.04 (Focal Fossa):
 
-deb https://nginx.org/packages/ubuntu/ focal nginx
+```
+deb https://nginx.org/packages/ubuntu/ focal nginx 
 deb-src https://nginx.org/packages/ubuntu/ focal nginx
 To install the packages, execute in your shell:
 
@@ -36,3 +37,4 @@ sudo apt install nginx
 You have now nginx installed on your server but not ready to serve web pages. you have to start the nginx. You can do this by using this command:
 
 sudo systemctl start nginx
+```
