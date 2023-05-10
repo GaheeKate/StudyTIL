@@ -59,3 +59,7 @@
 [2. PHP_101_2](PHP/PHP_101_2.md)</br>
 [3. PHP_CodeIgniterLaravel](PHP/PHP_CodeIgniterLaravel.md)</br>
 
+
+## Nginx
+[1. Nginx_install](Nginx/Nginx_install_without_prereq.md)</br>
+
