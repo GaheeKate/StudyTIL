@@ -21,10 +21,12 @@ or this:
 
 e.g. Ubuntu 20.04 (Focal Fossa):
 
+/etc/apt/sources.list.d/, such as /etc/apt/sources.list.d/nginx.list
+
 ```
 deb https://nginx.org/packages/ubuntu/ focal nginx 
 deb-src https://nginx.org/packages/ubuntu/ focal nginx
-To install the packages, execute in your shell:
+```
 
 sudo apt update
 sudo apt install nginx
