@@ -19,6 +19,8 @@ sudo apt install nginx
 ---
 or this:
 
+https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
+
 e.g. Ubuntu 20.04 (Focal Fossa):
 
 /etc/apt/sources.list.d/, such as /etc/apt/sources.list.d/nginx.list
