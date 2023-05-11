@@ -35,7 +35,6 @@ sudo apt install nginx
 ```
 
 
-You have now nginx installed on your server but not ready to serve web pages. you have to start the nginx. You can do this by using this command:
-
+```
 sudo systemctl start nginx
 ```
