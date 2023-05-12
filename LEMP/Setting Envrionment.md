@@ -1,0 +1,36 @@
+# set up the environments
+
+## adduser (dont use useradd, too simple)
+- goto sudoers.d and 90cloud, and set no password required (chmod 777 to modify the file)
+- use group and add sudo
+
+## MariaDB installation
+
+MariaDB Server Repositories
+- https://mariadb.org/download/?t=repo-config&d=22.04+%22jammy%22&v=10.11&r_m=blendbyte
+- install with -secure-installation
+- go to maria.conf.d -> server config file
+- comment out bind address
+- change port 3306 for security
+- create database
+- GRANT ALL PRIVILEGES ON `dbname`.* TO 'accname'@'%' IDENTIFIED BY 'pwd';'
+- fluch privileges
+- use HeidiSQL to connect db
+
+-----
+
+## Composer installation
+- https://getcomposer.org/download/
+
+## CI4installation
+- https://codeigniter.com/user_guide/installation/installing_composer.html
+- install in the root folder
+- mv to the folder usr/share/nginx~~
+- set .env 
+
+## link to php storm
+-sftp
+-deployment
+-boot path -> usr/~
+
+
