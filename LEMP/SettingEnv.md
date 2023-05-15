@@ -1,4 +1,4 @@
-# set up the environments
+# Setting up the environments
 
 ## adduser (dont use useradd, too simple)
 - goto sudoers.d and 90cloud, and set no password required (chmod 777 to modify the file)
@@ -26,7 +26,9 @@ MariaDB Server Repositories
 - https://codeigniter.com/user_guide/installation/installing_composer.html
 - install in the root folder
 - mv to the folder usr/share/nginx~~
-- set .env 
+- set .env -> mv env .env
+- ci_envrionment -> development
+- chmod 777 -r for writable
 
 ## link to php storm
 -sftp
