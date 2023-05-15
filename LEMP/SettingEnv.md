@@ -26,9 +26,10 @@ MariaDB Server Repositories
 - https://codeigniter.com/user_guide/installation/installing_composer.html
 - install in the root folder
 - mv to the folder usr/share/nginx~~
+- chmod 777 -r for writable[cap]
 - set .env -> mv env .env
 - ci_envrionment -> development
-- chmod 777 -r for writable
+
 
 ## link to php storm
 -sftp
