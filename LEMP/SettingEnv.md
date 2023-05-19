@@ -32,8 +32,9 @@ MariaDB Server Repositories
 
 
 ## link to php storm
--sftp
--deployment
--boot path -> usr/~
-
+- sftp
+- deployment
+- root path -> saved location of the proj
+- Mappings → Deployment path : / 
+- file -> setting -> php -> cli interpreter
 
