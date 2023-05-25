@@ -70,4 +70,5 @@
 ## Nginx
 [1. Nginx_install](Nginx/Nginx_install_without_prereq.md)</br>
 [2. Nginx_install_PHP](Nginx/Nginx_install_PHP.md)</br>
+[3. Nginx_SSL_update](Nginx/Nginx_SSL_update.md)</br>
 
