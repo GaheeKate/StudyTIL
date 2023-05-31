@@ -17,6 +17,10 @@ MariaDB Server Repositories
 - fluch privileges
 - use HeidiSQL to connect db
 
+- DB dump 
+  - mysql -u root -p 'db' > 'filename'
+  - mysql -u root -p 'db' < 'filename'
+
 -----
 
 ## Composer installation
