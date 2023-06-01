@@ -18,7 +18,7 @@ MariaDB Server Repositories
 - use HeidiSQL to connect db
 
 - DB dump 
-  - mysql -u root -p 'db' > 'filename'
+  - mysqldump -u root -p 'db' > 'filename'
   - mysql -u root -p 'db' < 'filename'
 
 -----
