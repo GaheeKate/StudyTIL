@@ -1,4 +1,4 @@
-#define() and defined()
+# define() and defined()
 
 ## The `defined()` function is used to check if a constant has been defined and returns a boolean value. On the other hand, the `define()` function is used to define constants.
 
