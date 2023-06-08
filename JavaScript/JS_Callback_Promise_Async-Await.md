@@ -35,8 +35,28 @@ operation1((error, result1) => {
 - Promise represents a value that may be available now, in the future, or never. It has three possible states: pending, fulfilled, or rejected. You can attach callbacks to these states using the .then() and .catch() methods
 - The .then() method is used to handle the fulfillment state of a promise, while the .catch() function is used to handle the rejection state.
 
+``` js
+const promise = new Promise((resolve, reject) => {
+  // Some asynchronous operation
+  setTimeout(() => {
+    const condition = true; // Change to false to trigger rejection
+    if (condition) {
+      resolve('Promise fulfilled'); // Fulfillment
+    } else {
+      reject(new Error('Promise rejected')); // Rejection
+    }
+  }, 1000);
+});
 
+promise
+  .then(result => {
+    console.log(result); // Promise fulfilled
+  })
+  .catch(error => {
+    console.error(error); // Promise rejected: Error: Promise rejected
+  });
 
+```
 ### Async-Await
 - async/await syntax is a more recent addition to JavaScript and provides a cleaner and more concise way to write asynchronous code compared to callbacks and promises. It is built on top of promises and offers a more synchronous-like style of coding. A function that is declared as async, will always return a promise.
 await keyword is used to pause the execution until the promise is fulfilled or rejected.
