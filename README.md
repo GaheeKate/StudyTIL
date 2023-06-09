@@ -6,7 +6,7 @@
 [3. REST API](General/RestApi.md)</br>
 [4. CodingStandards](General/BEM_Lint.md)</br>
 [5. CodingTest](General/coding_test.md)</br>
-[6. Database](General/DB_Lock.md)</br>
+[6. Database_Lock](General/DB_Lock.md)</br>
 
 ## Git
 [1. Git_101](Git/Git_101.md)</br>
