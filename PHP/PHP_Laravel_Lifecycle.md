@@ -2,7 +2,7 @@
 
 ### The lifecycle refers to the sequence of events that occur during the processing of a request. Here is an explanation of the Laravel lifecycle:
 
-The starting point of every request in Laravel is from the `public/index.php` file.
+The starting point of every request in Laravel is the `public/index.php` file.
 Depending on your web server configuration (Apache, Nginx), all requests are directed to the `public/index.php` file.
 
 The first step in the Laravel lifecycle is to create an instance of the service container.
