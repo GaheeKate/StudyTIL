@@ -1,23 +1,12 @@
-# Session & Cookie
+# ORM
 
-HTTP
+ORM stands for Object-Relational Mapping. It is a technique used to automatically map (connect) objects, which are concepts implemented in Object-Oriented Programming (OOP), to the data stored in Relational Databases (RDB). In other words, ORM bridges the gap between the object-oriented world and the relational database world by automatically generating SQL statements based on object relationships.
 
-HTTP is a protocol that is both connectionless and stateless. These characteristics are designed to optimize server resources by establishing and terminating connections for each user request, without maintaining a persistent connection or storing state information after the connection is terminated.
+ORM helps resolve the mismatch between objects and tables since they are not inherently compatible. By using ORM, you can work with objects and their relationships, and the ORM framework takes care of generating the appropriate SQL statements. This allows developers to interact with the database indirectly through objects, eliminating the need to write SQL statements manually.
 
-Session
+ORM simplifies database operations by providing an object-oriented approach and reducing the need for manual SQL queries, ultimately increasing productivity and code quality.
 
-A session ID is generated for each web browser and stored in the web container. It gets destroyed when the browser is closed. A new session is created when a user logs out, treating them as a new user. Storing client information in the session eliminates the need to access the database for every request, making it more efficient.
+Advantages of ORM include:
 
-Cookie
-
-A cookie is a temporary file that contains information generated when a user accesses a website. It is a piece of data that the server stores on the user's web browser. The data in a cookie is structured in the form of key-value pairs and is typically composed of strings.Cookies can potentially be used to track user activities and gather personal information. This raises privacy concerns
-
-Cookies are utilized to store user-convenience information like auto-fill data or "do not show again" preferences. It is important to note that cookies should only contain non-sensitive information that can be safely deleted or manipulated without major consequences. On the other hand, for handling crucial information that must remain confidential and secure, server-side sessions are employed to ensure it is not exposed to users or intercepted by unauthorized parties.
-
-To verify and identify users using cookies and sessions:
-
-1. When a user first visits a website, the server generates a unique session ID and sends it to the client as a cookie. This session ID is stored on the client-side.
-2. On subsequent requests from the client, the stored session ID is sent back to the server as a cookie in the request headers.
-3. The server receives the session ID and uses it to retrieve the corresponding session data stored on the server. This session data typically includes user-specific information such as login credentials or user preferences.
-4. The server compares the session data with the requested resource or action to verify the user's identity. If the session data matches the expected user information, the user is considered authenticated and authorized to access the requested resource.
-5. If the session data does not match or is missing, the server may redirect the user to a login page or deny access to the requested resource.
+1. Object-oriented code: ORM enables developers to focus on programming using object models rather than writing SQL statements directly. It eliminates the need for boilerplate code associated with SQL, such as declaration, assignment, and termination. By using ORM, you can improve code readability and maintainability, as object-oriented code is more expressive and easier to understand than raw SQL.
+2. Reusability, maintainability, and refactoring: ORM allows for writing independent and reusable code. Since the mapping information is explicit, it reduces dependencies on the database schema, making it easier to reuse and maintain code. Additionally, refactoring code becomes easier as ORM provides a layer of abstraction between the application and the database, allowing changes to the underlying database schema without affecting the codebase.
