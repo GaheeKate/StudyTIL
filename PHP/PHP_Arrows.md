@@ -12,7 +12,7 @@ is used in associative array key value assignment.
 
  
 
- 
+ ``` php
 <?php
  
 $arr1 = array("key1"=>"value1", "key2"=>"value2");
@@ -32,7 +32,7 @@ echo obj ->key2; // value2
  
 $arr2 = array("key1"->"value1"); // error
 $arr2 = array("key1" => "value1"); //  assign the value "value1" to the key "key1".
-
+```
 
 
 https://stackoverflow.com/questions/14037290/what-does-this-mean-in-php-or
