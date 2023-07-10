@@ -66,6 +66,7 @@
 [4. PHP_CodeIgniter4](PHP/PHP_CodeIgniter4.md)</br>
 [5. PHP_FileHandling](PHP/PHP_FileHandling.md)</br>
 [6. PHP_Laravel_Lifecycle](PHP/PHP_Laravel_Lifecycle.md)</br>
+[7. PHP_Arrows](PHP/PHP_Arrows.md)</br>
 
 
 ## LEMP
