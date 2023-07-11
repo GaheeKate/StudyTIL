@@ -3,12 +3,12 @@
 ## Question Mark ('?') Placeholder:
 The question mark '?' is commonly used as a placeholder in SQL queries, especially with programming languages that support parameterized queries or prepared statements. When using the '?' placeholder, you typically bind values to the parameters in the order they appear in the query. 
 
-```
+```php
 function sample($asdf) {
     $sql = 'SELECT a.id FROM sample a WHERE a.id= :aIdx:';
     $query = $this->db->query($sql, ['aIdx' => $asdf]);
 }
-``` php
+``` 
 -----
 
 ## Colon (':') Placeholder:
