@@ -4,6 +4,8 @@
 - @param {string} word2
 - @return {string}
   \*/
+
+``` js
   var mergeAlternately = function(word1, word2) {
   //starting with word1
 
@@ -24,12 +26,12 @@ for(var i=0; i<longerone; i++){
 return resarr.join('');
 };
 
-/\*\*
+```
 
 - @param {string} word1
 - @param {string} word2
 - @return {string}
-  \*/
+``` js
   var mergeAlternately = function(word1, word2) {
   var res = '';
   var longerOne = Math.max(word1.length, word2.length);
@@ -45,3 +47,4 @@ res += word2[i];
 
 return res;
 };
+```
