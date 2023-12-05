@@ -11,6 +11,7 @@
 [8. Cookie&Session](General/Cookie&Session.md)</br>
 [9. ORM](General/ORM.md)</br>
 [10. Sql_placeholder](General/Sql_placeholder.md)</br>
+[11. Q&A](General/Q&A.md)</br>
 
 
 ## Git
