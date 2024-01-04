@@ -4,10 +4,10 @@
 - @param {number} n
 - @return {boolean}
   \*/
-
+``` js
   var canPlaceFlowers = function(flowerbed, n) {
   //plant first
-  //b is the count of flowers can be planted
+  //b is the count of plots can be planted
   var b=0;
   //compare each plot with the for loop
   for(var i=0;i<=flowerbed.length;i++)
@@ -20,18 +20,19 @@
   var prev = ((i==0||flowerbed[i-1]==0)?0:1);
   var next = ((i==flowerbed.length-1||flowerbed[i+1]==0)?0:1);
 
-//if prev plot and next plot is empty
-//the plot is available
-if(prev ==0 && next==0)
-{
-//then count up the b and make the spot planted
-b++
-flowerbed[i]=1; }
-
-          }
+  //if prev plot and next plot is empty
+  //the plot is available
+  if(prev ==0 && next==0){
+      //then count up the b and make the spot planted
+      b++
+      flowerbed[i]=1; }
       }
+  }
       //if the available spots are more than n, return true
-      if(b>=n){return true}
-      else{return false}
+      if(b>=n){
+        return true;}
+      else{
+        return false;}
 
 };
+```
