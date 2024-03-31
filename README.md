@@ -82,3 +82,6 @@
 [2. Nginx_install_PHP](Nginx/Nginx_install_PHP.md)</br>
 [3. Nginx_SSL_update](Nginx/Nginx_SSL_update.md)</br>
 
+## Laravel
+[1. Laravel_crud](Laravel/Laravel_crud.md)</br>
+
